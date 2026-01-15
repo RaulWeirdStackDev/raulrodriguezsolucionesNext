@@ -1,0 +1,166 @@
+ [
+    {
+    "id": "po1",
+    "img": "/speakingtutor.png",
+    "title": "SpeakingTutor, desarrolla tus habilidades de conversación en inglés con inteligencia artificial (2025)",
+    "desc": "SpeakingTutor es una PWA instalable en dispositivos móviles y de escritorio que utiliza la API de Gemini, la Web Speech API, y WebSockets para ayudar a los estudiantes de inglés a mejorar sus habilidades de expresión oral mediante la práctica con un tutor virtual impulsado por inteligencia artificial.",
+    "link": "https://speaking-tutor-front-end.vercel.app/",
+    "category": ["educativo", "ia"],
+    "technologies": ["React", "Gemini API", "Tailwind CSS", "PWA", "Web Speech API", "WebSocket"]
+  },
+              {
+    "id": "po2",
+    "img": "/writingCorrector.png",
+    "title": "WritingCorrector, obten retroalimentación detallada para tu escritura (2025)",
+    "desc": "WritingCorrector es una aplicación web que utiliza la API de Gemini para proporcionar retroalimentación detallada sobre textos escritos en inglés, incluyendo las rubricas oficiales de IELTS, OET y TOEFL, ayudando a los usuarios a obtener mejores resultados en sus pruebas de escritura, además de generar ejercicios de escritura para IELTS y OET.",
+    "link": "https://mister-raul.vercel.app/",
+    "category": ["educativo", "ia"],
+    "technologies": ["React", "TypeScript", "Gemini API", "Tailwind CSS"]
+  },
+  {
+    "id": "po3",
+    "img": "/CVFeedback.png",
+    "title": "CVFeedback, mejora tu currículum vitae con IA! (2025)",
+    "desc": "CVFeedback es una aplicación web que utiliza la API de Gemini para analizar y proporcionar retroalimentación detallada sobre currículums vitae, ayudando a los usuarios a mejorar su presentación profesional y aumentar sus oportunidades laborales.",
+    "link": "https://cv-feedback-rr.vercel.app/",
+    "category": [ "laboral",  "ia"],
+    "technologies": ["React", "Gemini API", "Tailwind CSS"]
+  },
+    {
+    "id": "po4",
+    "img": "/listeningTrainer.png",
+    "title": "ListeningTrainer, mejora tu comprensión auditiva con IA! (2025)",
+    "desc": "ListeningTrainer es una aplicación web que utiliza la API de Gemini para generar ejercicios de comprensión auditiva y la Web Speech API para convertirlos en audios, ayudando a los usuarios a mejorar su habilidad de escucha.",
+    "link": "https://listening-trainer-pi.vercel.app/",
+    "category": ["educativo", "ia"],
+    "technologies": ["React", "Gemini API", "Tailwind CSS"]
+  },
+      {
+    "id": "po5",
+    "img": "/correctorDocente.png",
+    "title": "CorrectorDocente, obten retroalimentación detallada para tu evaluación docente (2025)",
+    "desc": "CorrectorDocente es una aplicación web que utiliza la API de Gemini para dar retroalimentación detallada sobre la evaluación docente en Chile en base a las rúbricas oficiales, ayudando a los profesores a mejorar su rendimiento en sus evaluaciones nacionales.",
+    "link": "https://corrector-docente.vercel.app/",
+    "category": ["educativo", "ia"],
+    "technologies": ["React", "Gemini API", "Tailwind CSS", "Electron"]
+  },
+        {
+    "id": "po6",
+    "img": "/readingTrainer.png",
+    "title": "ReadingTrainer, mejora tu comprensión lectora con IA! (2025)",
+    "desc": "ReadingTrainer es una aplicación web que utiliza la API de Gemini para generar ejercicios de comprensión lectora para distintos niveles, edades, y temas, además de entregar retroalimentación detallada, ayudando a los usuarios a mejorar su habilidad de comprensión lectora.",
+    "link": "https://reading-trainer4-schools.vercel.app/",
+    "category": ["educativo", "ia"],
+    "technologies": ["React", "Gemini API", "Tailwind CSS"]
+  },
+          {
+    "id": "po7",
+    "img": "/ayLana.png",
+    "title": "Ay Lana!, figuras conmemorativas de mascotas hechas con lana (2025)",
+    "desc": "El sitio web de Ay Lana! ayuda a la difusión de este emprendimiento. Está hecho con React y Tailwind CSS y cuenta con un dominio personalizado y buenas prácticas de SEO.",
+    "link": "https://aylana.cl/",
+    "category": "web",
+    "technologies": ["React", "Tailwind CSS"]
+  },
+    {
+    "id": "po8",
+    "img": "/LessonPlanner.png",
+    "title": "LessonPlanner, planifica tus clases con inteligencia artificial (2025)",
+    "desc": "LessonPlanner es una aplicación web que permite a los docentes chilenos planificar sus clases utilizando la API de Gemini generando planificaciones basadas en los planes y programas oficiales del MINEDUC.",
+    "link": "#",
+    "category": ["educativo", "ia", "laboral"],
+    "technologies": ["React", "Gemini API", "Tailwind CSS"]
+  },
+      {
+    "id": "po9",
+    "img": "/CityMap.png",
+    "title": "CityMap, juega a dar direcciones en inglés (2025)",
+    "desc": "CityMap es una aplicación web que permite a los usuarios practicar dar direcciones en inglés mediante un juego interactivo.",
+    "link": "https://city-map-seven.vercel.app/",
+    "category": ["educativo", "juegos"],
+    "technologies": ["React", "Tailwind CSS"]
+  },
+            {
+    "id": "p10",
+    "img": "/MisterRaul.png",
+    "title": "Mister Raul, preparación para exámenes internacionales de inglés (2025)",
+    "desc": "El sitio web de Mister Raul ofrece servicios de preparación para exámenes internacionales de inglés como OET, IELTS, y Cambridge. Está desarrollado con React y Tailwind CSS, cuenta con un diseño moderno y responsivo, un dominio personalizado y buenas prácticas de SEO.",
+    "link": "https://mister-raul.vercel.app/",
+    "category": "web",
+    "technologies": ["React", "Tailwind CSS"]
+  },
+  
+  {
+    "id": "p11",
+    "img": "/R-Gaming.jpeg",
+    "title": "R-Gaming, plataforma web fullstack para la difusión y venta de videojuegos (2025)",
+    "desc": "R-Gaming es una aplicación web fullstack que permite a los usuarios comprar y probar videojuegos, además de dar retroalimentación y contribuir al desarrollo de los mismos.",
+    "link": "#",
+    "category": ["fullstack", "juegos", "web"],
+    "technologies": ["React", "Node.js", "Express", "MongoDB"]
+  },
+  {
+    "id": "p12",
+    "img": "/planoCartesiano.jpeg",
+    "title": "PlanoCartesiano, aplicación web para la visualización de funciones en el plano cartesiano y su comprensión utilizando IA (2025)",
+    "desc": "PlanoCartesiano utiliza un canvas para graficar distintos puntos en el plano cartesiano, adicionalmente se utiliza la API de Gemini para explicar la evaluación de funciones en el plano cartesiano y su comprensión utilizando inteligencia artificial.",
+    "link": "https://plano-cartesiano.vercel.app/",
+    "category": ["educativo", "ia"],
+    "technologies": ["JavaScript", "Canvas API", "Gemini API", "HTML5"]
+  },
+  {
+    "id": "p13",
+    "img": "/hablaConmigo.png",
+    "title": "Habla Conmigo, aplicación de comunicación aumentativa y alternativa para personas no verbales (2025)",
+    "desc": "Habla Conmigo es una aplicación web de comunicación aumentativa y alternativa (CAA) que permite a personas no verbales comunicarse a través de pictogramas y voz sintetizada.",
+    "link": "https://hablaconmigoapp.netlify.app/",
+    "category": "accesibilidad",
+    "technologies": ["JavaScript", "Web Speech API", "HTML5", "CSS3"]
+  },
+  {
+    "id": "p14",
+    "img": "/VoiceCalc.png",
+    "title": "VoiceCalc, Calculadora con Reconocimiento de Voz (2025)",
+    "desc": "La aplicación web VoiceCalc, desarrollada con tecnologías de reconocimiento de voz tanto en inglés como español utilizando la Web Speech API de Google, apunta a promover una experiencia más inclusiva y accesible.",
+    "link": "https://voice-calc.vercel.app/",
+    "category": "accesibilidad",
+    "technologies": ["JavaScript", "Web Speech API", "HTML5", "CSS3"]
+  },
+  {
+    "id": "p15",
+    "img": "/out_of_eden.png",
+    "title": "Out of Eden, video juego 2D para la web (2025)",
+    "desc": "Vista de escritorio del video juego Out of Eden, desarrollado con el framework Phaser 3 para la creación de juegos 2D con JavaScript.",
+    "link": "https://out-of-eden.vercel.app/",
+    "category": "juegos",
+    "technologies": ["Phaser 3", "JavaScript", "HTML5", "CSS3"]
+  },
+  {
+    "id": "p16",
+    "img": "/NotasApp.png",
+    "title": "NotasApp, aplicación web de registro de notas (2025)",
+    "desc": "Formulario de registro de la aplicación web NotasApp, proyecto colaborativo para el que contribuí con el desarrollo del frontend utilizando JavaScript Vanilla, HTML5 y CSS3.",
+    "link": "#",
+    "category": "web",
+    "technologies": ["JavaScript", "HTML5", "CSS3"]
+  },
+  {
+    "id": "p17",
+    "img": "/sangom.png",
+    "title": "San-Gom Taekwondo, sitio web responsivo (2024)",
+    "desc": "Sitio web de la academia de Taekwondo San-Gom de Villa Alemana, V región, Chile. Esta página fue desarrollada con tecnologías de HTML, CSS y JavaScript. Además, se utilizó el framework Bootstrap, CSS Grid y Media Queries para el diseño responsivo.",
+    "link": "https://sangomtaekwondo.cl/",
+    "category": "web",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap"]
+  },
+  {
+    "id": "p18",
+    "img": "/porcentajes.png",
+    "title": "Ejercicios de Porcentajes, aplicación Educativa (2024)",
+    "desc": "Aplicación web que genera ejercicios de porcentajes de forma aleatoria para que el usuario pueda practicar y mejorar sus habilidades en matemáticas, además de recibir retroalimentación de los ejercicios realizados.",
+    "link": "https://RaulWeirdStackDev.github.io/EjerciciosPorcentajes/",
+    "category": "educativo",
+    "technologies": ["JavaScript", "HTML5", "CSS3"]
+  }
+]
+
