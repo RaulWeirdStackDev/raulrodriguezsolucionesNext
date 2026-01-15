@@ -1,15 +1,17 @@
+'use client';
+
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { usePathname } from "next/navigation"; // Cambiamos la librería
 
 export const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const pathname = usePathname(); // En Next.js, pathname es un string directo
 
   useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth" // transición suave
+      behavior: "smooth"
     });
-  }, [pathname]);
+  }, [pathname]); // Se dispara cada vez que cambia la ruta
 
   return null;
 };
