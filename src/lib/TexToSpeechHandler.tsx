@@ -15,8 +15,6 @@ export const TextToSpeechHandler = () => {
       return;
     }
 
-    // PRIORIDAD 1: Buscar por ID específico (el que pusimos en el Home)
-    // PRIORIDAD 2: Buscar por etiqueta <main>
     const mainContent = document.getElementById('contenido-principal') || document.querySelector('main');
 
     if (!mainContent) {
@@ -24,27 +22,17 @@ export const TextToSpeechHandler = () => {
       return;
     }
 
-    // Solo extraemos texto de los descendientes DIRECTOS o hijos del contenido
-    // Esto evita que "salte" hacia arriba al Slider por error de burbujeo
     const elementos = mainContent.querySelectorAll('h1, h2, h3, h4, p, li');
     let textoCompleto = "";
 
     elementos.forEach(el => {
-      // Verificamos que el elemento sea realmente hijo de nuestro contenedor principal
-      // Esto es un doble check de seguridad para Next.js
       if (mainContent.contains(el)) {
         const clone = el.cloneNode(true) as Element;
-        
-        // Eliminamos elementos que no deben leerse (iconos, botones, navs)
         clone.querySelectorAll('svg, i, button, .slider, [class*="slider"], nav').forEach(item => item.remove());
-        
         const texto = clone.textContent?.trim();
         
         if (texto && texto.length > 2) {
-          // Limpieza de caracteres especiales
           const textoLimpio = texto.replace(/[^\w\sáéíóúñÁÉÍÓÚÑ.,;:¿?¡!-]/g, '').trim();
-          
-          // Filtro para no leer opciones de filtrado si están en el portafolio
           const frasesExcluidas = ['explorar por categoría', 'todos', 'ver todos', 'ia', 'fullstack'];
           const esExcluido = frasesExcluidas.some(frase => 
             textoLimpio.toLowerCase() === frase
@@ -77,6 +65,7 @@ export const TextToSpeechHandler = () => {
   return (
     <button
       onClick={leerContenido}
+      aria-label="Escuchar contenido"
       className={`
         group fixed bottom-[90px] right-5 z-[1000]
         w-[50px] h-[50px] rounded-full
@@ -84,9 +73,14 @@ export const TextToSpeechHandler = () => {
         border-2 backdrop-blur-md
         transition-all duration-300 ease-out
         hover:scale-110
-        ${isReading ? 'bg-red-600 text-white' : 'bg-sky-600 text-white'}
+        ${isReading ? 'bg-red-600 text-white border-red-400' : 'bg-sky-600 text-white border-sky-400'}
       `}
     >
+      {/* Tooltip personalizado */}
+      <span className="absolute right-14 scale-0 group-hover:scale-100 transition-all duration-200 origin-right bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100">
+        {isReading ? "Detener lectura" : "Lectura por voz"}
+      </span>
+
       {isReading ? <VolumeX /> : <Volume2 />}
     </button>
   );
