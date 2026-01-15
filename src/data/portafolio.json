@@ -37,7 +37,7 @@
   },
       {
     "id": "po5",
-    "img": "/correctorDocente.png",
+    "img": "/CorrectorDocente.png",
     "title": "CorrectorDocente, obten retroalimentación detallada para tu evaluación docente (2025)",
     "desc": "CorrectorDocente es una aplicación web que utiliza la API de Gemini para dar retroalimentación detallada sobre la evaluación docente en Chile en base a las rúbricas oficiales, ayudando a los profesores a mejorar su rendimiento en sus evaluaciones nacionales.",
     "link": "https://corrector-docente.vercel.app/",
