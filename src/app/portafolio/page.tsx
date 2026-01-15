@@ -207,7 +207,7 @@ const PortafolioPage = () => {
             href="/contacto" 
             className="inline-block px-10 py-4 bg-white text-blue-950 font-bold rounded-2xl hover:bg-blue-50 transition-all scale-100 hover:scale-105 shadow-xl"
           >
-            Empezar un Proyecto
+            ¡Contáctame para un Proyecto!
           </Link>
         </section>
 
