@@ -32,7 +32,7 @@ const About = () => {
     {
       category: "Metodologías & herramientas",
       icon: <GitBranch className="w-6 h-6 text-orange-400" />,
-      skills: ["Git", "Agile", "Scrum"]
+      skills: ["Git", "GitHub", "Agile", "Scrum"]
     }
   ];
 
