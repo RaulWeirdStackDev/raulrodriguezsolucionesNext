@@ -27,12 +27,12 @@ const About = () => {
     {
       category: "Especialidades",
       icon: <Bot className="w-6 h-6 text-purple-400" />,
-      skills: ["Integración Google AI", "Web Speech API", "PWA", "Electron", "SEO", "WCAG (Accesibilidad)"]
+      skills: ["Integración Google AI", "Web Speech API", "PWA", "Electron", "SEO" ]
     },
     {
       category: "Metodologías & herramientas",
       icon: <GitBranch className="w-6 h-6 text-orange-400" />,
-      skills: ["Git", "GitHub", "Agile", "Scrum"]
+      skills: ["Git", "GitHub", "Agile", "Scrum", "WCAG (Accesibilidad)"]
     }
   ];
 
