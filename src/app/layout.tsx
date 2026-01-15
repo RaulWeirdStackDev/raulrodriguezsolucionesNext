@@ -14,24 +14,65 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Raúl Rodríguez | Soluciones Informáticas | Desarrollo Web Full-Stack",
-  description: "desarrollo web profesional: Landing Pages, sitios web, aplicaciones Full-Stack, APIs, PWAs, aplicaciones educativas y asesoría en accesibilidad web.",
-  keywords: ["desarrollo web", "Full-Stack", "Viña del Mar", "Chile", "accesibilidad"],
+  title: "Raúl Rodríguez | Desarrollo Web Full-Stack & Aplicaciones con IA | Chile",
+  description: "Desarrollador Full-Stack especializado en aplicaciones educativas con IA, sitios web accesibles y soluciones digitales. Landing pages desde $250.000. Valparaíso, Chile.",
+  keywords: [
+    "desarrollo web Chile",
+    "desarrollador full-stack Valparaíso",
+    "aplicaciones educativas IA",
+    "desarrollo web accesible",
+    "sitios web Viña del Mar",
+    "React developer Chile",
+    "aplicaciones Gemini API",
+    "PWA Chile",
+    "desarrollo Next.js",
+    "accesibilidad web WCAG",
+    "tecnologías educativas",
+    "integración inteligencia artificial",
+    "landing page profesional"
+  ],
   authors: [{ name: "Raúl Rodríguez Clavero" }],
+  creator: "Raúl Rodríguez Clavero",
+  publisher: "Raúl Rodríguez Soluciones Informáticas",
+  
   openGraph: {
-    title: "Raúl Rodríguez | Soluciones Informáticas | Desarrollo Web Full-Stack",
-    description: "Servicios de desarrollo web profesional y asesoría en accesibilidad.",
+    title: "Raúl Rodríguez | Desarrollo Web & Aplicaciones Educativas con IA",
+    description: "Desarrollador Full-Stack creando sitios web accesibles y aplicaciones innovadoras con inteligencia artificial. Especializado en tecnologías educativas y soluciones digitales efectivas.",
     url: "https://www.raulrodriguez.cl",
-    siteName: "Raúl Rodríguez Portfolio",
+    siteName: "Raúl Rodríguez - Soluciones Informáticas",
     images: [
       {
         url: "https://www.raulrodriguez.cl/logo.png",
-        width: 1200,
+        width: 630,
         height: 630,
+        alt: "Raúl Rodríguez - Desarrollador Web Full-Stack especializado en aplicaciones educativas con IA"
       },
     ],
     locale: "es_CL",
     type: "website",
+  },
+  
+  twitter: {
+    card: "summary_large_image",
+    title: "Raúl Rodríguez | Desarrollo Web & Apps Educativas con IA",
+    description: "Desarrollador Full-Stack creando soluciones web accesibles y aplicaciones educativas innovadoras con IA en Chile.",
+    images: ["https://www.raulrodriguez.cl/logo.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+
+  alternates: {
+    canonical: "https://www.raulrodriguez.cl",
   },
 };
 
