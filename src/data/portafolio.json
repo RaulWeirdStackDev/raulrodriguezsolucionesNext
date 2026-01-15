@@ -28,7 +28,7 @@
   },
     {
     "id": "po4",
-    "img": "/listeningTrainer.png",
+    "img": "/ListeningTrainer.png",
     "title": "ListeningTrainer, mejora tu comprensión auditiva con IA! (2025)",
     "desc": "ListeningTrainer es una aplicación web que utiliza la API de Gemini para generar ejercicios de comprensión auditiva y la Web Speech API para convertirlos en audios, ayudando a los usuarios a mejorar su habilidad de escucha.",
     "link": "https://listening-trainer-pi.vercel.app/",
