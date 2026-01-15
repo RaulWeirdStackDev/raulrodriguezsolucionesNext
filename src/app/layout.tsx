@@ -14,23 +14,12 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Raúl Rodríguez | Desarrollo Web Full-Stack & Aplicaciones con IA | Chile",
+  metadataBase: new URL('https://www.raulrodriguez.cl'),
+  title: {
+  default: "Raúl Rodríguez | Desarrollo Web Full-Stack & Aplicaciones con IA",
+  template: "%s | Raúl Rodríguez - Desarrollador Chile"
+       },
   description: "Desarrollador Full-Stack especializado en aplicaciones educativas con IA, sitios web accesibles y soluciones digitales. Landing pages desde $250.000. Valparaíso, Chile.",
-  keywords: [
-    "desarrollo web Chile",
-    "desarrollador full-stack Valparaíso",
-    "aplicaciones educativas IA",
-    "desarrollo web accesible",
-    "sitios web Viña del Mar",
-    "React developer Chile",
-    "aplicaciones Gemini API",
-    "PWA Chile",
-    "desarrollo Next.js",
-    "accesibilidad web WCAG",
-    "tecnologías educativas",
-    "integración inteligencia artificial",
-    "landing page profesional"
-  ],
   authors: [{ name: "Raúl Rodríguez Clavero" }],
   creator: "Raúl Rodríguez Clavero",
   publisher: "Raúl Rodríguez Soluciones Informáticas",
@@ -42,10 +31,10 @@ export const metadata: Metadata = {
     siteName: "Raúl Rodríguez - Soluciones Informáticas",
     images: [
       {
-        url: "https://www.raulrodriguez.cl/logo.png",
-        width: 630,
+        url: "/og-image.png",
+        width: 1200,
         height: 630,
-        alt: "Raúl Rodríguez - Desarrollador Web Full-Stack especializado en aplicaciones educativas con IA"
+        alt: "Raúl Rodríguez - Desarrollador Full-Stack | Aplicaciones Educativas con IA - Chile"
       },
     ],
     locale: "es_CL",
@@ -56,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Raúl Rodríguez | Desarrollo Web & Apps Educativas con IA",
     description: "Desarrollador Full-Stack creando soluciones web accesibles y aplicaciones educativas innovadoras con IA en Chile.",
-    images: ["https://www.raulrodriguez.cl/logo.png"],
+    images: ["/og-image.png"],
   },
 
   robots: {
@@ -83,16 +72,59 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <head>
-        {/* Google Tag Manager - Script principal */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-W9VLCJ9N');`}
-        </Script>
-      </head>
+<head>
+  {/* Charset y compatibilidad básica */}
+  <meta charSet="utf-8" />
+  
+  {/* Google Tag Manager - Script principal (tu código original, perfecto) */}
+  <Script id="google-tag-manager" strategy="afterInteractive">
+    {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W9VLCJ9N');`}
+  </Script>
+
+  {/* Structured Data: JSON-LD para Persona (mejora rich results, Knowledge Graph y búsquedas IA) */}
+  <Script
+    id="structured-data-person"
+    type="application/ld+json"
+    strategy="afterInteractive"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Raúl Rodríguez Clavero",
+        "jobTitle": "Desarrollador Full-Stack & Especialista en Aplicaciones Educativas con IA",
+        "url": "https://www.raulrodriguez.cl",
+        "image": "https://www.raulrodriguez.cl/logo.png", // o usa tu foto profesional si prefieres
+        "sameAs": [
+          "https://www.linkedin.com/in/raulrodriguezdev/", // ← ¡reemplaza con tus links reales!
+          "https://github.com/RaulWeirdStackDev",
+          // "https://twitter.com/tuusuario",
+           "https://www.instagram.com/raulfullstackdev/",
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Viña del Mar",
+          "addressRegion": "Valparaíso",
+          "postalCode": "2520000", 
+          "addressCountry": "CL"
+        },
+        "email": "contacto@raulrodriguez.cl", 
+        "knowsAbout": [
+          "Desarrollo Web Full-Stack",
+          "Inteligencia Artificial Educativa",
+          "Accesibilidad Web WCAG",
+          "Next.js",
+          "React",
+          "Progressive Web Apps"
+        ]
+      })
+    }}
+  />
+
+</head>
       <body className={`${robotoMono.variable} antialiased`}>
         {/* Google Tag Manager (noscript) - Para navegadores sin JS */}
         <noscript>
