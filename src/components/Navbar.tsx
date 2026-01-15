@@ -36,6 +36,7 @@ export const Navbar = () => {
         <div className="container mx-auto px-5 py-4 relative z-[2]">
           <div className="flex items-center justify-between">
             {/* Brand Section */}
+            <Link href="/">
             <div className="flex items-center gap-3 sm:gap-2">
               {/* CORRECCIÓN: Image con width y height requeridos */}
               <Image
@@ -57,7 +58,7 @@ export const Navbar = () => {
                 </p>
               </div>
             </div>
-
+</Link>
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-2">
               {navLinks.map((link) => {
