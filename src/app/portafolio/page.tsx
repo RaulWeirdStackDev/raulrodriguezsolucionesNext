@@ -1,12 +1,63 @@
-"use client";
-
+import type { Metadata } from "next";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-// Usamos el alias @ que Next.js configura por defecto para apuntar a /src
 import portafolioData from "@/data/portafolio.json";
 
-// 1. Interfaces para TypeScript
+// ===========================
+// METADATA SEO
+// ===========================
+export const metadata: Metadata = {
+  title: "Portafolio - Proyectos de Desarrollo Web & IA",
+  description: "Explora más de 18 proyectos de desarrollo web, aplicaciones educativas con IA, PWAs, juegos interactivos y soluciones de accesibilidad. Experiencia con React, Next.js, Gemini API, Web Speech API y más.",
+  
+  openGraph: {
+    title: "Portafolio | Raúl Rodríguez - Proyectos Web & Aplicaciones con IA",
+    description: "Descubre aplicaciones educativas innovadoras con inteligencia artificial, PWAs instalables, juegos web interactivos y soluciones de accesibilidad desarrolladas con tecnologías modernas.",
+    url: "https://www.raulrodriguez.cl/portafolio",
+    siteName: "Raúl Rodríguez - Soluciones Informáticas",
+    images: [
+      {
+        url: "/speakingtutor.png",
+        width: 1200,
+        height: 630,
+        alt: "Portafolio de Raúl Rodríguez - Proyectos de desarrollo web y aplicaciones educativas con IA"
+      },
+    ],
+    locale: "es_CL",
+    type: "website",
+  },
+  
+  twitter: {
+    card: "summary_large_image",
+    title: "Portafolio | Proyectos Web & Apps Educativas con IA",
+    description: "18+ proyectos: aplicaciones educativas con Gemini API, PWAs, juegos interactivos y soluciones accesibles. React, Next.js y más.",
+    images: ["/speakingtutor.png"],
+  },
+
+  alternates: {
+    canonical: "https://www.raulrodriguez.cl/portafolio",
+  },
+
+  keywords: [
+    "portafolio desarrollador fullstack",
+    "proyectos React Chile",
+    "aplicaciones educativas IA",
+    "Gemini API proyectos",
+    "PWA Chile ejemplos",
+    "Web Speech API proyectos",
+    "juegos web JavaScript",
+    "aplicaciones accesibles WCAG",
+    "portafolio Next.js",
+    "desarrollador educativo Chile",
+    "SpeakingTutor IA",
+    "WritingCorrector Gemini"
+  ],
+};
+
+// ===========================
+// INTERFACES
+// ===========================
 interface Proyecto {
   id: string;
   img: string;
@@ -23,15 +74,16 @@ interface CategoriaInfo {
   count: number;
 }
 
-// Casteo de datos
 const portafolio = portafolioData as Proyecto[];
 
+// ===========================
+// COMPONENTE
+// ===========================
 const PortafolioPage = () => {
   const [filteredProjects, setFilteredProjects] = useState<Proyecto[]>(portafolio);
   const [activeCategory, setActiveCategory] = useState<string>("todos");
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Función para contar proyectos
   const countProjectsByCategory = (categoryKey: string): number => {
     if (categoryKey === "todos") return portafolio.length;
     return portafolio.filter((p) => {
@@ -42,7 +94,6 @@ const PortafolioPage = () => {
     }).length;
   };
 
-  // Mapa de categorías
   const categories: Record<string, CategoriaInfo> = {
     todos: { name: "Todos", icon: "🌟", count: portafolio.length },
     ia: { name: "I.A.", icon: "🤖", count: countProjectsByCategory("ia") },
@@ -90,13 +141,15 @@ const PortafolioPage = () => {
         </header>
 
         {/* Filtros */}
-        <div className="mb-12">
+        <nav className="mb-12" aria-label="Filtros de categoría de proyectos">
           <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
             {Object.entries(categories).map(([key, cat]) => (
               <button
                 key={key}
                 onClick={() => handleCategoryChange(key)}
                 disabled={cat.count === 0}
+                aria-label={`Filtrar por ${cat.name}`}
+                aria-pressed={activeCategory === key}
                 className={`
                   px-4 py-2.5 rounded-xl font-semibold transition-all duration-300
                   flex items-center gap-2 border whitespace-nowrap
@@ -107,13 +160,13 @@ const PortafolioPage = () => {
                   ${cat.count === 0 ? 'opacity-30 cursor-not-allowed' : 'cursor-pointer hover:scale-105'}
                 `}
               >
-                <span className="text-lg">{cat.icon}</span>
+                <span className="text-lg" aria-hidden="true">{cat.icon}</span>
                 <span className="text-sm">{cat.name}</span>
                 <span className="text-xs bg-black/30 px-2 py-0.5 rounded-full">{cat.count}</span>
               </button>
             ))}
           </div>
-        </div>
+        </nav>
 
         {/* Grid de Proyectos */}
         <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-300 ${isAnimating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
@@ -129,12 +182,12 @@ const PortafolioPage = () => {
               >
                 <div className="relative h-52 w-full overflow-hidden">
                   <div className="absolute top-3 left-3 z-10 bg-blue-600/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-lg flex items-center gap-2 shadow-lg">
-                    <span>{mainCat.icon}</span>
+                    <span aria-hidden="true">{mainCat.icon}</span>
                     <span className="uppercase tracking-wider">{mainCat.name}</span>
                   </div>
                   <Image
                     src={proyecto.img}
-                    alt={proyecto.title}
+                    alt={`Captura de pantalla del proyecto ${proyecto.title}`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -143,17 +196,18 @@ const PortafolioPage = () => {
                 </div>
 
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                  <h2 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                     {proyecto.title}
-                  </h3>
+                  </h2>
                   <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
                     {proyecto.desc}
                   </p>
 
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2 mb-6" role="list" aria-label="Tecnologías utilizadas">
                     {proyecto.technologies.map((tech) => (
                       <span 
-                        key={tech} 
+                        key={tech}
+                        role="listitem"
                         className="text-[10px] font-bold uppercase tracking-widest bg-blue-500/10 text-blue-400 px-2.5 py-1 rounded-md border border-blue-500/20"
                       >
                         {tech}
@@ -166,10 +220,11 @@ const PortafolioPage = () => {
                       href={proyecto.link}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`Ver proyecto ${proyecto.title} (se abre en nueva pestaña)`}
                       className="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold text-center transition-all shadow-lg flex items-center justify-center gap-2 group/btn"
                     >
                       Ver Proyecto
-                      <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>
                     </a>
@@ -187,7 +242,7 @@ const PortafolioPage = () => {
         {/* Empty State */}
         {filteredProjects.length === 0 && (
           <div className="text-center py-20">
-            <h3 className="text-2xl text-white font-bold">No se encontraron proyectos</h3>
+            <h2 className="text-2xl text-white font-bold">No se encontraron proyectos</h2>
             <button 
               onClick={() => handleCategoryChange('todos')}
               className="mt-4 px-8 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-500 transition-all"

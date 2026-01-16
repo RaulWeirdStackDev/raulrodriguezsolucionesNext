@@ -1,5 +1,58 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
+// ===========================
+// METADATA SEO
+// ===========================
+export const metadata: Metadata = {
+  title: "Servicios de Desarrollo Web - Precios y Planes",
+  description: "Servicios de desarrollo web en Chile: Landing Pages desde $250.000, sitios comerciales, aplicaciones web fullstack, PWA, APIs y apps educativas. Presupuestos transparentes, calidad profesional y soporte incluido.",
+  
+  openGraph: {
+    title: "Servicios y Precios | Desarrollo Web Profesional en Chile",
+    description: "Landing pages, sitios web comerciales, aplicaciones fullstack, PWAs y soluciones educativas. Precios competitivos, desarrollo moderno con React y Next.js. Valparaíso, Chile.",
+    url: "https://www.raulrodriguez.cl/servicios",
+    siteName: "Raúl Rodríguez - Soluciones Informáticas",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Servicios de Desarrollo Web - Raúl Rodríguez | Landing Pages, Sitios Web, Apps Fullstack"
+      },
+    ],
+    locale: "es_CL",
+    type: "website",
+  },
+  
+  twitter: {
+    card: "summary_large_image",
+    title: "Servicios de Desarrollo Web | Precios Chile 2026",
+    description: "Landing pages desde $250.000, sitios web comerciales, aplicaciones fullstack y más. Desarrollo profesional con React y Next.js.",
+    images: ["/og-image.png"],
+  },
+
+  alternates: {
+    canonical: "https://www.raulrodriguez.cl/servicios",
+  },
+
+  keywords: [
+    "desarrollo web Chile precios",
+    "landing page Chile precio",
+    "sitio web comercial costo",
+    "aplicación web fullstack precio",
+    "desarrollador web Valparaíso",
+    "PWA Chile desarrollo",
+    "API REST desarrollo Chile",
+    "aplicaciones educativas precio",
+    "desarrollo Next.js Chile",
+    "React developer Chile precios"
+  ],
+};
+
+// ===========================
+// COMPONENTE
+// ===========================
 const Servicios = () => {
   const servicios = [
     {
@@ -67,22 +120,21 @@ const Servicios = () => {
   ];
 
   return (
-    <main className="min-h-screen pt-16 pb-24 px-5 md:px-8 lg:px-12  bg-slate-950">
+    <main className="min-h-screen pt-16 pb-24 px-5 md:px-8 lg:px-12 bg-slate-950">
       <div className="mx-auto w-full max-w-7xl">
         {/* Header */}
         <header className="text-center mb-20 lg:mb-24">
-
-<h1
-  className="
-    text-4xl sm:text-5xl lg:text-6xl 
-    font-extrabold tracking-tight
-    text-white
-    drop-shadow-[0_4px_20px_rgba(59,130,246,0.6)]
-    mb-6
-  "
->
-  Servicios y Precios
-</h1>
+          <h1
+            className="
+              text-4xl sm:text-5xl lg:text-6xl 
+              font-extrabold tracking-tight
+              text-white
+              drop-shadow-[0_4px_20px_rgba(59,130,246,0.6)]
+              mb-6
+            "
+          >
+            Servicios y Precios
+          </h1>
 
           <div className="w-28 h-1 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-400 mx-auto rounded-full shadow-[0_0_20px_rgba(16,185,129,0.5)] mb-8" />
 
@@ -95,7 +147,7 @@ const Servicios = () => {
         {/* Grid de Servicios */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {servicios.map((servicio, index) => (
-            <div
+            <article
               key={index}
               className="
                 group bg-gradient-to-br from-gray-900/70 to-gray-950/70 
@@ -107,16 +159,16 @@ const Servicios = () => {
                 flex flex-col h-full
               "
             >
-              <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors text-center">
+              <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors text-center">
                 {servicio.titulo}
-              </h3>
+              </h2>
 
               <p className="text-gray-300 text-base leading-relaxed mb-6 flex-grow">
                 {servicio.descripcion}
               </p>
 
               {servicio.caracteristicas && (
-                <ul className="text-sm text-gray-400 mb-6 space-y-1.5 pl-5 list-disc marker:text-blue-400 list-none">
+                <ul className="text-sm text-gray-400 mb-6 space-y-1.5 pl-5 list-disc marker:text-blue-400">
                   {servicio.caracteristicas.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
@@ -143,21 +195,22 @@ const Servicios = () => {
                     hover:shadow-blue-700/50 hover:scale-105
                     transition-all duration-300
                   "
+                  aria-label={`Cotizar servicio de ${servicio.titulo}`}
                 >
                   Cotizar este servicio →
                 </Link>
               </div>
-            </div>
+            </article>
           ))}
         </div>
 
         {/* Footer note */}
-        <div className="text-center mt-16 text-gray-400 text-sm">
+        <footer className="text-center mt-16 text-gray-400 text-sm">
           <p>Todos los proyectos incluyen asesoría inicial gratuita • Revisiones y ajustes razonables • Soporte post-entrega 30 días</p>
           <p className="mt-2">
             ¿Necesitas algo diferente? <Link href="/contacto" className="text-blue-400 hover:underline">Hablemos de tu proyecto</Link>
           </p>
-        </div>
+        </footer>
       </div>
     </main>
   );

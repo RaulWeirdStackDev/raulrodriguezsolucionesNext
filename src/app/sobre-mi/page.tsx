@@ -1,5 +1,4 @@
-"use client";
-
+import type { Metadata } from "next";
 import Link from "next/link"
 import Image from "next/image"
 import { 
@@ -12,6 +11,57 @@ import {
   Code2
 } from "lucide-react"
 
+// ===========================
+// METADATA SEO
+// ===========================
+export const metadata: Metadata = {
+  title: "Sobre Mí - Desarrollador Full-Stack & Profesor",
+  description: "Raúl Rodríguez Clavero: Desarrollador Full-Stack, Analista Programador y Profesor de Inglés especializado en aplicaciones educativas con IA. Experiencia en React, Next.js, Node.js y soluciones digitales innovadoras en Valparaíso, Chile.",
+  
+  openGraph: {
+    title: "Sobre Mí | Raúl Rodríguez - Desarrollador Full-Stack & Educador",
+    description: "Conoce mi trayectoria como desarrollador Full-Stack y profesor. Especializado en crear aplicaciones web accesibles y soluciones educativas innovadoras con inteligencia artificial.",
+    url: "https://www.raulrodriguez.cl/sobre-mi",
+    siteName: "Raúl Rodríguez - Soluciones Informáticas",
+    images: [
+      {
+        url: "/about.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Raúl Rodríguez Clavero - Desarrollador Full-Stack y Profesor especializado en tecnologías educativas"
+      },
+    ],
+    locale: "es_CL",
+    type: "profile",
+  },
+  
+  twitter: {
+    card: "summary_large_image",
+    title: "Sobre Mí | Raúl Rodríguez - Desarrollador & Educador",
+    description: "Desarrollador Full-Stack y profesor especializado en aplicaciones educativas con IA. React, Next.js, Node.js y más.",
+    images: ["/about.jpg"],
+  },
+
+  alternates: {
+    canonical: "https://www.raulrodriguez.cl/sobre-mi",
+  },
+
+  // Keywords relevantes para SEO (opcional pero útil)
+  keywords: [
+    "desarrollador full-stack Chile",
+    "analista programador Valparaíso",
+    "profesor inglés desarrollador",
+    "aplicaciones educativas IA",
+    "React Next.js Chile",
+    "soluciones web accesibles",
+    "Raúl Rodríguez desarrollador",
+    "tecnologías educativas Chile"
+  ],
+};
+
+// ===========================
+// COMPONENTE
+// ===========================
 const About = () => {
   const techStack = [
     {
@@ -98,7 +148,7 @@ const About = () => {
               <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/10">
                 <Image
                   src="/about.jpg" 
-                  alt="Raúl Rodríguez Clavero"
+                  alt="Raúl Rodríguez Clavero - Desarrollador Full-Stack y Profesor"
                   fill
                   className="object-cover transform group-hover:scale-105 transition-transform duration-700"
                   priority
@@ -168,20 +218,20 @@ const About = () => {
                 <h4 className="text-xl font-bold text-white mt-1">Hibridación Técnica y Pedagógica</h4>
                 <div className="text-gray-400 mt-2 space-y-3">
                   <div className="p-3 rounded-lg bg-white/5 border border-white/5">
-                    <p className="text-white font-medium"> Bootcamp de Desarrollo Fullstack Javascript (Desafío Latam, Chile, 2025)</p>
+                    <p className="text-white font-medium">✓ Bootcamp de Desarrollo Fullstack Javascript (Desafío Latam, Chile, 2025)</p>
                     <p className="text-xs text-emerald-300 ml-3">Desarrollo de aplicaciones web fullstack con tecnologías modernas.</p>
                   </div>
                   <div className="p-3 rounded-lg bg-white/5 border border-white/5">
-                    <p className="text-white font-medium"> TNS Analista Programador (CFT Cenco, Chile, 2025)</p>
+                    <p className="text-white font-medium">✓ TNS Analista Programador (CFT Cenco, Chile, 2025)</p>
                     <p className="text-xs text-green-500 ml-3">Arquitectura de software, bases de datos, gestión de proyectos y paradigmas de programación.</p>
                   </div>
                   <div className="p-3 rounded-lg bg-white/5 border border-white/5">
-                    <p className="text-white font-medium"> Magíster en TESOL (Teaching English to Speakers of Other Languages) (UNAB, Chile, 2020)</p>
+                    <p className="text-white font-medium">✓ Magíster en TESOL (Teaching English to Speakers of Other Languages) (UNAB, Chile, 2020)</p>
                     <p className="text-xs text-sky-300 ml-3">Especialización en metodologías de enseñanza internacional.</p>
                   </div>
 
                   <div className="p-3 rounded-lg bg-white/5 border border-white/5">
-                    <p className="text-white font-medium"> Licenciado en Educación y Profesor de Inglés (PUCV, Chile, 2016)</p>
+                    <p className="text-white font-medium">✓ Licenciado en Educación y Profesor de Inglés (PUCV, Chile, 2016)</p>
                     <p className="text-xs text-indigo-300 ml-3">Bases fundamentales para la creación de tecnologías educativas.</p>
                   </div>
                 </div>
