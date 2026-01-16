@@ -23,11 +23,11 @@ export default function Home() {
         <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/40 via-blue-800/30 to-blue-700/40 backdrop-blur-sm border border-white/10 py-12 rounded-lg my-8 shadow-xl">
           <div className="flex flex-wrap items-center min-h-[75vh]">
             <div className="w-full lg:w-7/12 mb-8 lg:mb-0 text-center lg:text-left">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white text-balance">
                 Convierto tus ideas en{" "}
                 <span className="text-blue-400">experiencias web</span> innovadoras y efectivas.
               </h1>
-              <p className="text-lg md:text-xl mb-6 text-blue-100/90">
+              <p className="text-lg md:text-xl mb-6 text-blue-100/90 text-pretty">
                 Desarrollador Full Stack especializado en crear sitios web
                 accesibles y funcionales que realmente generen resultados para tu
                 emprendimiento, empresa o ejercicio profesional.
@@ -93,7 +93,7 @@ export default function Home() {
               <div key={i} className="h-full text-center bg-gradient-to-br from-blue-900/30 to-blue-800/20 backdrop-blur-sm border border-blue-400/20 rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(59,130,246,0.3)] hover:bg-blue-900/40 hover:border-blue-400/40 p-6">
                 <div className="mb-3">{item.icon}</div>
                 <h4 className="text-xl font-semibold mb-2 text-white">{item.title}</h4>
-                <p className="text-blue-100/80">{item.text}</p>
+                <p className="text-blue-100/80 text-pretty">{item.text}</p>
               </div>
             ))}
           </div>
@@ -107,15 +107,15 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
             <div className="text-center transition-transform duration-300 hover:-translate-y-1">
               <MessageCircle size={40} className="text-blue-400 mb-3 mx-auto" />
-              <p className="text-blue-100/90">Herramienta de comunicación aumentativa para personas no verbales utilizando tecnologías de síntesis de voz</p>
+              <p className="text-blue-100/90 text-pretty">Herramienta de comunicación aumentativa para personas no verbales utilizando tecnologías de síntesis de voz</p>
             </div>
             <div className="text-center transition-transform duration-300 hover:-translate-y-1">
               <Brain size={40} className="text-blue-400 mb-3 mx-auto" />
-              <p className="text-blue-100/90">Aplicaciones educativas con inteligencia artificial y gamificación para diferentes asignaturas y niveles</p>
+              <p className="text-blue-100/90 text-pretty">Aplicaciones educativas con inteligencia artificial y gamificación para diferentes asignaturas y niveles</p>
             </div>
             <div className="text-center transition-transform duration-300 hover:-translate-y-1">
               <Layers size={40} className="text-blue-400 mb-3 mx-auto" />
-              <p className="text-blue-100/90">Plataformas fullstack con funcionalidades avanzadas como autentificación de usuarios y gestión de contenidos</p>
+              <p className="text-blue-100/90 text-pretty">Plataformas fullstack con funcionalidades avanzadas como autentificación de usuarios y gestión de contenidos</p>
             </div>
           </div>
           <div className="mt-8 text-center">
@@ -133,19 +133,19 @@ export default function Home() {
         <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/40 via-blue-800/30 to-blue-700/40 backdrop-blur-sm border border-white/10 py-8 rounded-lg mb-8 shadow-xl">
           <div className="w-full lg:w-8/12 mx-auto text-center mb-6">
             <h2 className="text-3xl md:text-4xl font-semibold mb-2 text-white">Mis Clientes</h2>
-            <p className="text-lg text-blue-100/90 mb-0">
+            <p className="text-lg text-blue-100/90 mb-0 text-balance">
               Profesionales, empresas y emprendimientos que han confiado en mi trabajo
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 justify-items-center items-stretch max-w-4xl mx-auto">
+           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center items-stretch max-w-5xl mx-auto">
             <div className="h-full w-full">
               <a
                 href="https://sangomtaekwondo.cl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  flex flex-col items-center text-center p-4 h-full min-h-[180px] justify-center
+                  flex flex-col items-center text-center p-6 h-full min-h-[180px] justify-center
                   bg-blue-900/30 backdrop-blur-sm border border-blue-400/20 rounded-xl
                   transition-all duration-300
                   hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(59,130,246,0.3)]
@@ -162,10 +162,10 @@ export default function Home() {
                     className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
-                <h5 className="text-base font-semibold mb-1 text-white transition-colors duration-300 hover:text-blue-300">
+                <h5 className="text-base font-semibold mb-2 text-white transition-colors duration-300 hover:text-blue-300 text-balance">
                   Sangom Taekwondo Center
                 </h5>
-                <p className="text-sm text-blue-100/80 mb-0 leading-tight">
+                <p className="text-sm text-blue-100/80 mb-0 leading-snug text-pretty">
                   Academia de Taekwondo en Villa Alemana
                 </p>
               </a>
@@ -177,7 +177,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  flex flex-col items-center text-center p-4 h-full min-h-[180px] justify-center
+                  flex flex-col items-center text-center p-6 h-full min-h-[180px] justify-center
                   bg-blue-900/30 backdrop-blur-sm border border-blue-400/20 rounded-xl
                   transition-all duration-300
                   hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(59,130,246,0.3)]
@@ -194,11 +194,42 @@ export default function Home() {
                     className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
-                <h5 className="text-base font-semibold mb-1 text-white transition-colors duration-300 hover:text-blue-300">
+                <h5 className="text-base font-semibold mb-2 text-white transition-colors duration-300 hover:text-blue-300 text-balance">
                   Ay Lana!
                 </h5>
-                <p className="text-sm text-blue-100/80 mb-0 leading-tight">
-                  Figuras conmemorativas de mascotas con lana
+                <p className="text-sm text-blue-100/80 mb-0 leading-snug text-pretty">
+                  Figuras conmemorativas de mascotas
+                </p>
+              </a>
+            </div>
+            <div className="h-full w-full">
+              <a
+                href="https://raksa.cl/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  flex flex-col items-center text-center p-6 h-full min-h-[180px] justify-center
+                  bg-blue-900/30 backdrop-blur-sm border border-blue-400/20 rounded-xl
+                  transition-all duration-300
+                  hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(59,130,246,0.3)]
+                  hover:bg-blue-900/40 hover:border-blue-400/50
+                  no-underline hover:no-underline
+                "
+              >
+                <div className="w-20 h-20 bg-white rounded-xl flex items-center justify-center p-2 mb-3 shadow-lg">
+                  <Image
+                    src="/raksaLogo.png"
+                    alt="Raksa Auditores"
+                    width={80}
+                    height={80}
+                    className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
+                <h5 className="text-base font-semibold mb-2 text-white transition-colors duration-300 hover:text-blue-300 text-balance">
+                  Raksa Auditores
+                </h5>
+                <p className="text-sm text-blue-100/80 mb-0 leading-snug text-pretty">
+                  Contabilidad y auditoría tributaria
                 </p>
               </a>
             </div>
@@ -208,8 +239,8 @@ export default function Home() {
         {/* Final CTA */}
         <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 via-blue-900 to-blue-800 text-white py-12 rounded-lg text-center mb-5 shadow-2xl">
           <div className="w-full lg:w-8/12 mx-auto">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-white">¿Llevemos tu idea al siguiente nivel?</h2>
-            <p className="text-lg md:text-xl mb-6 text-blue-50">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-white text-balance">¿Llevemos tu idea al siguiente nivel?</h2>
+            <p className="text-lg md:text-xl mb-6 text-blue-50 text-pretty">
               Hablemos sobre cómo puedo ayudarte a crear una presencia digital gracias a un sitio web
               que realmente genere los resultados que buscas.
             </p>
