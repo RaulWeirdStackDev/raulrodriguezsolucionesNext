@@ -56,66 +56,122 @@ export const metadata: Metadata = {
 const Servicios = () => {
   const servicios = [
     {
-      titulo: "Landing Page Profesional",
+      titulo: "Una Sola Página Web",
+      subtitulo: "Landing Page Profesional",
       descripcion:
-        "Página única de alto impacto para captar leads, promociones o lanzamiento de productos. Optimizada para conversiones y móvil.",
+        "Perfecta para promocionar un producto, captar clientes o lanzar tu negocio. Tu página estará optimizada para verse bien en celulares y computadores.",
       precio: "Desde $250.000 CLP",
-      caracteristicas: ["Diseño personalizado", "SEO básico", "Optimización móvil", "Formulario de contacto", "1 ronda de revisiones"],
+      caracteristicas: [
+        "Diseño a tu medida",
+        "Aparece en Google (SEO básico)",
+        "Se ve perfecto en computador, celular y tablet",
+        "Formulario para que te contacten",
+        "1 ronda de cambios incluida"
+      ],
+      incluye: "✅ Dominio .cl gratis por 1 año + Publicación incluida",
     },
     {
-      titulo: "Sitio Web Comercial",
+      titulo: "Sitio Web para tu Negocio",
+      subtitulo: "Sitio Web Comercial",
       descripcion:
-        "Hasta 5–6 secciones/páginas. Ideal para empresas, profesionales, portafolios o servicios. Moderno y fácil de actualizar.",
+        "Hasta 6 páginas para mostrar todos tus servicios, productos o portafolio. Podrás actualizar el contenido tú mismo sin necesitar un programador.",
       precio: "Desde $600.000 CLP",
       caracteristicas: [
-        "Diseño responsive",
-        "Hasta 6 páginas",
-        "Sistema CMS simple (autoadministrable)",
-        "SEO on-page avanzado",
-        "Integración redes + Google Analytics",
+        "Funciona en todos los dispositivos",
+        "Hasta 6 páginas (Inicio, Servicios, Nosotros, etc.)",
+        "Podrás editar textos e imágenes tú mismo",
+        "Optimizado para aparecer en Google",
+        "Conectado a redes sociales y estadísticas"
       ],
+      incluye: "✅ Dominio .cl gratis por 1 año + Publicación incluida",
     },
     {
-      titulo: "Aplicación Web FullStack",
+      titulo: "Aplicación Web",
+      subtitulo: "Aplicación Web FullStack",
       descripcion:
-        "Desarrollo a medida con autenticación, panel de administración, base de datos y funcionalidades personalizadas.",
+        "Una aplicación hecha 100% a medida para tu negocio. Con inicio de sesión de usuarios, base de datos segura y panel de control para administrar todo.",
       precio: "Desde $1.200.000 CLP",
-      caracteristicas: ["Autenticación segura", "Base de datos PostgreSQL", "API REST/GraphQL", "Panel admin", "Escalable"],
+      caracteristicas: [
+        "Sistema de usuarios con contraseñas seguras",
+        "Guarda información de forma segura",
+        "Conexión con otras aplicaciones (API)",
+        "Panel para administrar todo",
+        "Crece con tu negocio"
+      ],
+      incluye: "✅ Publicación y configuración completa incluida",
     },
+    {
+  titulo: "Aplicaciones con Inteligencia Artificial",
+  subtitulo: "Apps potenciadas con IA",
+  descripcion:
+    "Aplicaciones que usan inteligencia artificial para dar feedback automático, generar contenido personalizado, y cumplir tus objetivos de negocio o profesionales.",
+  precio: "Desde $1.800.000 CLP",
+  caracteristicas: [
+    "Soluciones con IA para distintas industrias",
+    "Integración con modelos de lenguaje avanzados",
+    "Generación de textos personalizados",
+    "Retroalimentación inteligente en tiempo real",
+    "Y más según tus necesidades"
+  ],
+  incluye: "✅ Publicación y configuración completa incluida",
+  destacado: true,
+},
     {
       titulo: "Desarrollo de API",
+      subtitulo: "Sistema de Conexión para Apps",
       descripcion:
-        "APIs robustas, seguras y documentadas (REST o GraphQL). Perfectas para conectar aplicaciones móviles o sistemas externos.",
+        "Un sistema que permite conectar tu sitio web con apps de celular, otros sistemas o plataformas externas. Todo documentado y seguro.",
       precio: "Desde $750.000 CLP",
-      caracteristicas: ["Documentación Swagger/OpenAPI", "Autenticación JWT", "Validaciones estrictas", "Tests automatizados"],
+      caracteristicas: [
+        "Documentación completa de cómo funciona",
+        "Sistema de acceso seguro con tokens",
+        "Validación de todos los datos",
+        "Pruebas automáticas incluidas"
+      ],
+      incluye: "✅ Publicación y configuración completa incluida",
     },
     {
-      titulo: "Progressive Web App (PWA)",
+      titulo: "Aplicación Web Progresiva",
+      subtitulo: "Progressive Web App (PWA)",
       descripcion:
-        "Sitio web con experiencia similar a app nativa: instalable, funciona offline, notificaciones push.",
+        "Tu sitio web se puede instalar como una app en el celular, funciona sin internet y puede enviar notificaciones a tus clientes.",
       precio: "Cotizar",
-      caracteristicas: ["Instalación en móvil", "Modo offline", "Notificaciones push", "Rendimiento optimizado"],
+      caracteristicas: [
+        "Se instala en el celular como app",
+        "Funciona sin conexión a internet",
+        "Envía notificaciones push",
+        "Carga súper rápido"
+      ],
+      incluye: "✅ Publicación y configuración completa incluida",
     },
+
     {
-      titulo: "Aplicaciones Educativas",
+      titulo: "Revisión de Accesibilidad Web",
+      subtitulo: "Auditoría WCAG 2.2",
       descripcion:
-        "Plataformas de e-learning, apps con gamificación, reconocimiento de voz, ejercicios interactivos y seguimiento.",
+        "Revisamos que tu sitio web pueda ser usado por personas con discapacidad visual, auditiva o motriz. Te entregamos un informe y hacemos las correcciones necesarias.",
       precio: "Cotizar",
-      caracteristicas: ["Gamificación", "Progreso del usuario", "Integración IA opcional", "Diseño pedagógico"],
+      caracteristicas: [
+        "Informe detallado de problemas",
+        "Cumplimiento de estándares internacionales",
+        "Pruebas con lectores de pantalla",
+        "Capacitación para tu equipo"
+      ],
+      incluye: "✅ Implementación de mejoras incluida",
     },
     {
-      titulo: "Auditoría y Mejora de Accesibilidad Web",
+      titulo: "Publicación de Proyectos Existentes",
+      subtitulo: "Servicio de Rescate Web",
       descripcion:
-        "Diagnóstico WCAG 2.2 + implementación de correcciones. Cumplimiento normativo y mejor inclusión.",
-      precio: "Cotizar",
-      caracteristicas: ["Informe detallado", "Niveles A/AA", "Pruebas con lectores de pantalla", "Capacitación básica"],
-    },
-    {
-      titulo: "Despliegue y Puesta en Producción",
-      descripcion:
-        "Configuración completa: dominio, hosting/VPS, SSL, CI/CD, monitoreo inicial y entrega.",
-      precio: "$150.000 CLP + costo dominio/hosting",
-      caracteristicas: ["SSL gratuito", "Despliegue continuo", "Optimización rendimiento", "Entrega documentada"],
+        "¿Tienes un sitio web terminado pero no está en internet? Publicamos tu proyecto y lo dejamos funcionando.",
+      precio: "$150.000 CLP + costos de dominio/hosting",
+      caracteristicas: [
+        "Certificado de seguridad SSL gratis",
+        "Actualizaciones automáticas",
+        "Optimización de velocidad",
+        "Instrucciones de cómo funciona todo"
+      ],
+      incluye: "⚡ Servicio ideal si otro desarrollador te dejó solo"
     },
   ];
 
@@ -138,10 +194,23 @@ const Servicios = () => {
 
           <div className="w-28 h-1 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-400 mx-auto rounded-full shadow-[0_0_20px_rgba(16,185,129,0.5)] mb-8" />
 
-          <p className="text-gray-200 text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto px-2">
-            Soluciones web modernas y personalizadas para emprendedores, profesionales y empresas en Chile.  
-            Calidad profesional, accesibilidad y excelente relación precio-valor.
+          <p className="text-gray-200 text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto px-2 mb-6">
+            Soluciones web modernas y fáciles de entender para emprendedores, profesionales y empresas en Chile.  
+            Calidad profesional, sin letra chica.
           </p>
+
+          {/* Destacado de valor */}
+          <div className="bg-gradient-to-r from-green-900/30 to-blue-900/30 border border-green-500/30 rounded-xl p-6 max-w-2xl mx-auto">
+            <p className="text-green-300 font-semibold text-lg mb-2">
+              🎁 Todos los proyectos incluyen:
+            </p>
+            <ul className="text-gray-200 text-sm sm:text-base space-y-1">
+              <li>✅ Publicación en internet (configuración completa)</li>
+              <li>✅ Dominio personalizado .cl gratis por 1 año</li>
+              <li>✅ Hosting gratuito para sitios y landing pages</li>
+              <li>✅ 30 días de soporte técnico después de la entrega</li>
+            </ul>
+          </div>
         </header>
 
         {/* Grid de Servicios */}
@@ -149,52 +218,76 @@ const Servicios = () => {
           {servicios.map((servicio, index) => (
             <article
               key={index}
-              className="
+              className={`
                 group bg-gradient-to-br from-gray-900/70 to-gray-950/70 
-                backdrop-blur-xl border border-white/8 
+                backdrop-blur-xl border 
+                ${servicio.destacado ? 'border-yellow-500/40 shadow-yellow-900/30' : 'border-white/8'}
                 rounded-2xl p-7 sm:p-8 lg:p-9
                 shadow-xl shadow-black/40
                 hover:shadow-blue-900/30 hover:border-blue-500/40
                 transition-all duration-400
                 flex flex-col h-full
-              "
+                ${servicio.destacado ? 'relative' : ''}
+              `}
             >
-              <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors text-center">
-                {servicio.titulo}
-              </h2>
+              {servicio.destacado && (
+                <div className="absolute -top-3 right-4 bg-yellow-500 text-gray-900 px-4 py-1 rounded-full text-xs font-bold shadow-lg">
+                  🔥 Popular
+                </div>
+              )}
+
+              <div className="mb-4">
+                <h2 className="text-2xl font-bold text-white mb-1 group-hover:text-blue-300 transition-colors">
+                  {servicio.titulo}
+                </h2>
+                <p className="text-sm text-blue-400 font-medium">{servicio.subtitulo}</p>
+              </div>
 
               <p className="text-gray-300 text-base leading-relaxed mb-6 flex-grow">
                 {servicio.descripcion}
               </p>
 
               {servicio.caracteristicas && (
-                <ul className="text-sm text-gray-400 mb-6 space-y-1.5 pl-5 list-disc marker:text-blue-400">
+                <ul className="text-sm text-gray-400 mb-6 space-y-2 pl-1">
                   {servicio.caracteristicas.map((item, i) => (
-                    <li key={i}>{item}</li>
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-0.5">▸</span>
+                      <span>{item}</span>
+                    </li>
                   ))}
                 </ul>
               )}
+
+              {/* Incluye */}
+              <div className="bg-green-950/30 border border-green-700/30 rounded-lg p-3 mb-4">
+                <p className="text-green-300 text-xs font-semibold">
+                  {servicio.incluye}
+                </p>
+              </div>
 
               <div className="mt-auto">
                 <p className="text-xl font-bold text-blue-400 mb-2">
                   {servicio.precio}
                 </p>
                 <p className="text-sm text-gray-500 mb-5">
-                  IVA no incluido • Precios referenciales 2026
+                  IVA no incluido • Precios 2026
                 </p>
 
                 <Link
                   href="/contacto"
-                  className="
+                  className={`
                     block w-full text-center
                     py-3.5 px-6
                     font-semibold text-white
-                    bg-gradient-to-r from-blue-600 to-blue-700
+                    ${servicio.destacado 
+                      ? 'bg-gradient-to-r from-yellow-600 to-yellow-700 shadow-yellow-900/40 hover:shadow-yellow-700/50' 
+                      : 'bg-gradient-to-r from-blue-600 to-blue-700 shadow-blue-900/40 hover:shadow-blue-700/50'
+                    }
                     rounded-xl
-                    shadow-lg shadow-blue-900/40
-                    hover:shadow-blue-700/50 hover:scale-105
+                    shadow-lg
+                    hover:scale-105
                     transition-all duration-300
-                  "
+                  `}
                   aria-label={`Cotizar servicio de ${servicio.titulo}`}
                 >
                   Cotizar este servicio →
@@ -205,10 +298,24 @@ const Servicios = () => {
         </div>
 
         {/* Footer note */}
-        <footer className="text-center mt-16 text-gray-400 text-sm">
-          <p>Todos los proyectos incluyen asesoría inicial gratuita • Revisiones y ajustes razonables • Soporte post-entrega 30 días</p>
-          <p className="mt-2">
-            ¿Necesitas algo diferente? <Link href="/contacto" className="text-blue-400 hover:underline">Hablemos de tu proyecto</Link>
+        <footer className="text-center mt-16 space-y-4">
+          <div className="bg-gray-900/50 border border-gray-700/30 rounded-xl p-6 max-w-3xl mx-auto">
+            <p className="text-gray-300 text-base mb-3 font-semibold">
+              📋 Todos los proyectos incluyen:
+            </p>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              Asesoría inicial gratuita • Ajustes razonables incluidos • Soporte técnico por 30 días después de la entrega • 
+              Instrucciones claras de cómo usar tu sitio web
+            </p>
+          </div>
+          
+          <p className="text-gray-400 text-base">
+            ¿Necesitas algo diferente o tienes dudas? <Link href="/contacto" className="text-blue-400 hover:underline font-semibold">Conversemos sin compromiso</Link>
+          </p>
+
+          <p className="text-gray-500 text-xs max-w-2xl mx-auto">
+            💡 Nota: A diferencia de otros desarrolladores, <span className="text-green-400 font-semibold">todos mis proyectos incluyen la publicación en internet</span>. 
+            No te quedarás con archivos que no sabes cómo usar. Tu sitio estará online y funcionando desde el día 1.
           </p>
         </footer>
       </div>
