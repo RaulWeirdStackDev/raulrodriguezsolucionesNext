@@ -6,7 +6,6 @@ import Image from "next/image";
 import portafolioData from "@/data/portafolio.json";
 
 interface Proyecto {
-  id: string;
   img: string;
   title: string;
   desc: string;
@@ -70,6 +69,21 @@ export default function PortfolioClient() {
     }, 150);
   };
 
+  // Generar un ID único basado en el título del proyecto
+  const generateId = (title: string, index: number): string => {
+    const slug = title
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "") // Eliminar acentos
+      .replace(/[^a-z0-9\s]/g, "") // Eliminar caracteres especiales
+      .trim()
+      .split(/\s+/)
+      .slice(0, 3) // Tomar las primeras 3 palabras
+      .join("-");
+    
+    return `${slug}-${index}`;
+  };
+
   return (
     <main className="min-h-screen pt-16 pb-24 px-5 md:px-8 lg:px-12 bg-slate-950">
       <div className="mx-auto w-full max-w-7xl">
@@ -117,10 +131,11 @@ export default function PortfolioClient() {
           {filteredProjects.map((proyecto, index) => {
             const mainCatKey = Array.isArray(proyecto.category) ? proyecto.category[0] : proyecto.category;
             const mainCat = categories[mainCatKey] || categories.todos;
+            const projectId = generateId(proyecto.title, index);
 
             return (
               <article
-                key={proyecto.id}
+                key={projectId}
                 className="group flex flex-col h-full bg-gray-900/40 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-900/20 transition-all duration-500"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
@@ -147,7 +162,7 @@ export default function PortfolioClient() {
                     {proyecto.desc}
                   </p>
 
-                  <div className="flex flex-wrap gap-2 mb-6" role="list" aria-label="Tecnologías utilizadas">
+                  <div className="flex flex-wrap gap-2 mb-6 items-center justify-center" role="list" aria-label="Tecnologías utilizadas">
                     {proyecto.technologies.map((tech) => (
                       <span 
                         key={tech}
