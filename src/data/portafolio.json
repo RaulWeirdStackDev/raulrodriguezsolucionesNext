@@ -4,7 +4,7 @@
     "title": "Raksa Auditores, auditoria y contabilidad tributaria (2026)",
     "desc": "El sitio web de Raksa Auditores ayuda a la difusión de las actividades de esta empresa. Está hecho con React y Tailwind CSS y cuenta con un dominio personalizado, servidor propio, y buenas prácticas de SEO.",
     "link": "https://raksa.cl/",
-    "category": ["web"],
+    "category": "web",
     "technologies": ["React", "Tailwind CSS", "SEO"]
   },
   {
