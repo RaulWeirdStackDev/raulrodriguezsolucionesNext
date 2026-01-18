@@ -16,20 +16,20 @@
     "technologies": ["React", "Gemini API", "Tailwind CSS", "PWA", "Web Speech API", "WebSocket"]
   },
   {
-    "img": "/writingCorrector.png",
-    "title": "WritingCorrector, obten retroalimentación detallada para tu escritura (2025)",
-    "desc": "WritingCorrector es una aplicación web que utiliza la API de Gemini para proporcionar retroalimentación detallada sobre textos escritos en inglés, incluyendo las rubricas oficiales de IELTS, OET y TOEFL, ayudando a los usuarios a obtener mejores resultados en sus pruebas de escritura, además de generar ejercicios de escritura para IELTS y OET.",
-    "link": "https://writing-corrector-frontend-ts.vercel.app/",
-    "category": ["educativo", "ia"],
-    "technologies": ["React", "TypeScript", "Gemini API", "Tailwind CSS"]
-  },
-  {
     "img": "/CVFeedback.png",
     "title": "CVFeedback, mejora tu currículum vitae con IA! (2025)",
     "desc": "CVFeedback es una aplicación web que utiliza la API de Gemini para analizar y proporcionar retroalimentación detallada sobre currículums vitae, ayudando a los usuarios a mejorar su presentación profesional y aumentar sus oportunidades laborales.",
     "link": "https://cv-feedback-rr.vercel.app/",
     "category": ["laboral", "ia"],
     "technologies": ["React", "Gemini API", "Tailwind CSS"]
+  },
+    {
+    "img": "/writingCorrector.png",
+    "title": "WritingCorrector, obten retroalimentación detallada para tu escritura (2025)",
+    "desc": "WritingCorrector es una aplicación web que utiliza la API de Gemini para proporcionar retroalimentación detallada sobre textos escritos en inglés, incluyendo las rubricas oficiales de IELTS, OET y TOEFL, ayudando a los usuarios a obtener mejores resultados en sus pruebas de escritura, además de generar ejercicios de escritura para IELTS y OET.",
+    "link": "https://writing-corrector-frontend-ts.vercel.app/",
+    "category": ["educativo", "ia"],
+    "technologies": ["React", "TypeScript", "Gemini API", "Tailwind CSS"]
   },
   {
     "img": "/ListeningTrainer.png",
