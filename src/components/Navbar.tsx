@@ -24,7 +24,7 @@ export const Navbar = () => {
     { to: '/', label: 'Inicio' },
     { to: '/sobre-mi', label: 'Sobre Mí' },
     { to: '/servicios', label: 'Servicios' },
-    { to: '/portafolio', label: 'Portafolio' },
+    { to: '/portafolio', label: 'Proyectos' },
     { to: '/contacto', label: 'Contacto' }
   ];
 

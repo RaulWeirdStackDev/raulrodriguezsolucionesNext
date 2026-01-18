@@ -90,7 +90,7 @@ export default function PortfolioClient() {
         
         <header className="text-center mb-16 lg:mb-20">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white drop-shadow-[0_4px_20px_rgba(59,130,246,0.5)] mb-6">
-            Mi Portafolio
+            Mis Proyectos
           </h1>
           <div className="w-28 h-1 bg-gradient-to-r from-blue-400 via-blue-600 to-blue-400 mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)] mb-8" />
           <p className="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto px-2">

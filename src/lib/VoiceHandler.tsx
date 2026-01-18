@@ -90,7 +90,7 @@ export const VoiceHandler = () => {
         "inicio": "/",
         "sobre mí": "/sobre-mi",
         "servicios": "/servicios",
-        "portafolio": "/portafolio",
+        "proyectos": "/portafolio",
         "contacto": "/contacto"
       };
 
