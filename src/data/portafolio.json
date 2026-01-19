@@ -1,5 +1,13 @@
 [
   {
+    "img": "/rrsWeb.png",
+    "title": "Raúl Rodríguez - Soluciones Informáticas, servicios de desarrollo web y soluciones digitales (2026)",
+     "desc": "Sitio web profesional que ofrece servicios de desarrollo web full-stack y soluciones digitales. Desarrollado con Next.js y Tailwind CSS, implementa navegación y lectura por voz con Web Speech API para mejorar la accesibilidad. Incluye dominio personalizado y optimización SEO.",
+    "link": "https://raulrodriguez.cl/",
+    "category": ["web", "accesibilidad"],
+    "technologies": ["Next.js", "Tailwind CSS", "Web Speech API", "SEO"]
+  },
+  {
     "img": "/raksa.png",
     "title": "Raksa Auditores, auditoria y contabilidad tributaria (2026)",
     "desc": "El sitio web de Raksa Auditores ayuda a la difusión de las actividades de esta empresa. Está hecho con React y Tailwind CSS y cuenta con un dominio personalizado, servidor propio, y buenas prácticas de SEO.",
