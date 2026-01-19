@@ -50,7 +50,7 @@
   {
     "img": "/CorrectorDocente.png",
     "title": "CorrectorDocente, obten retroalimentación detallada para tu evaluación docente (2025)",
-    "desc": "CorrectorDocente es una aplicación web que utiliza la API de Gemini para dar retroalimentación detallada sobre la evaluación docente en Chile en base a las rúbricas oficiales, ayudando a los profesores a mejorar su rendimiento en sus evaluaciones nacionales.",
+    "desc": "CorrectorDocente es una aplicación web e instalable en Windows vía Electron que utiliza la API de Gemini para dar retroalimentación detallada al portafolio de la evaluación docente en Chile en base a las rúbricas oficiales, ayudando a los profesores a mejorar su rendimiento en sus evaluaciones nacionales.",
     "link": "https://corrector-docente.vercel.app/",
     "category": ["educativo", "ia"],
     "technologies": ["React", "Gemini API", "Node.js", "Express", "Tailwind CSS", "Electron"]
@@ -81,11 +81,11 @@
   },
   {
     "img": "/LessonPlanner.png",
-    "title": "LessonPlanner, planifica tus clases con inteligencia artificial (2025)",
-    "desc": "LessonPlanner es una aplicación web que permite a los docentes chilenos planificar sus clases utilizando la API de Gemini generando planificaciones basadas en los planes y programas oficiales del MINEDUC.",
+    "title": "LessonPlanner, genera tus planificaciones de clases con inteligencia artificial (2025)",
+    "desc": "LessonPlanner es una aplicación instalable en Windows vía Electron que permite a los docentes chilenos generar las planificaciones de sus clases utilizando la API de Gemini en base a los planes y programas oficiales del MINEDUC y descargarlas en formato Word y PDF.",
     "link": "#",
     "category": ["educativo", "ia", "laboral"],
-    "technologies": ["React", "Node.js", "Express", "Gemini API", "Tailwind CSS"]
+    "technologies": ["React", "Node.js", "Express", "Gemini API", "Tailwind CSS", "Electron"]
   },
   {
     "img": "/CityMap.png",
@@ -106,7 +106,7 @@
   {
     "img": "/R-Gaming.jpeg",
     "title": "R-Gaming, plataforma web fullstack para la difusión y venta de videojuegos (2025)",
-    "desc": "R-Gaming es una aplicación web fullstack que permite a los usuarios comprar y probar videojuegos, además de dar retroalimentación y contribuir al desarrollo de los mismos.",
+    "desc": "R-Gaming es una aplicación web fullstack que permitirá a los usuarios comprar y probar videojuegos de mi creación, además de dar retroalimentación y contribuir al desarrollo de los mismos.",
     "link": "#",
     "category": ["fullstack", "juegos", "web"],
     "technologies": ["React", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"]
