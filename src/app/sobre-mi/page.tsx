@@ -77,7 +77,7 @@ const About = () => {
     {
       category: "Especialidades",
       icon: <Bot className="w-6 h-6 text-purple-400" />,
-      skills: ["Integración Google AI", "Web Speech API", "PWA", "Electron", "SEO", "Inglés Bilingüe (C2)"]
+      skills: ["Soluciones digitales con IA", "Web Speech API", "PWA", "Electron", "SEO", "Inglés Bilingüe (C2)"]
     },
     {
       category: "Metodologías & herramientas",
