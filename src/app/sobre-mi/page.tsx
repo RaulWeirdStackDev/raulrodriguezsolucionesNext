@@ -16,7 +16,7 @@ import {
 // ===========================
 export const metadata: Metadata = {
   title: "Sobre Mí - Desarrollador Full-Stack & Profesor",
-  description: "Raúl Rodríguez Clavero: Desarrollador Full-Stack, Analista Programador y Profesor de Inglés especializado en aplicaciones educativas con IA. Experiencia en React, Next.js, Node.js y soluciones digitales innovadoras en Valparaíso, Chile.",
+  description: "Raúl Rodríguez Clavero: Desarrollador Full-Stack, Analista Programador y Profesor de Inglés especializado en aplicaciones educativas y laborales con IA. Experiencia en React, Next.js, Node.js y soluciones digitales innovadoras en Valparaíso, Chile.",
   
   openGraph: {
     title: "Sobre Mí | Raúl Rodríguez - Desarrollador Full-Stack & Educador",
@@ -46,17 +46,65 @@ export const metadata: Metadata = {
     canonical: "https://www.raulrodriguez.cl/sobre-mi",
   },
 
-  // Keywords relevantes para SEO (opcional pero útil)
-  keywords: [
-    "desarrollador full-stack Chile",
-    "analista programador Valparaíso",
-    "profesor inglés desarrollador",
-    "aplicaciones educativas IA",
-    "React Next.js Chile",
-    "soluciones web accesibles",
-    "Raúl Rodríguez desarrollador",
-    "tecnologías educativas Chile"
-  ],
+  // Schema.org JSON-LD para SEO
+  other: {
+    'application/ld+json': JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Raúl Rodríguez Clavero",
+      "jobTitle": "Desarrollador Full-Stack & Analista Programador",
+      "url": "https://www.raulrodriguez.cl",
+      "image": "https://www.raulrodriguez.cl/about.jpg",
+      "sameAs": [
+        // Agrega aquí tus perfiles sociales cuando los tengas
+        // "https://github.com/tuusuario",
+        // "https://linkedin.com/in/tuusuario"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Valparaíso",
+        "addressRegion": "Valparaíso",
+        "addressCountry": "CL"
+      },
+      "knowsAbout": [
+        "React", 
+        "Next.js", 
+        "Node.js", 
+        "TypeScript", 
+        "PostgreSQL", 
+        "Inteligencia Artificial",
+        "Desarrollo Full-Stack",
+        "Aplicaciones Educativas"
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Pontificia Universidad Católica de Valparaíso",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CL"
+          }
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad Andrés Bello",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CL"
+          }
+        }
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Desarrollador Full-Stack",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Valparaíso"
+        },
+        "skills": "React, Next.js, Node.js, PostgreSQL, TypeScript, IA"
+      }
+    })
+  }
 };
 
 // ===========================
@@ -90,6 +138,8 @@ const About = () => {
     <main id="contenido-principal" className="min-h-screen pt-16 pb-24 px-5 md:px-8 lg:px-12 bg-slate-950">
       <div className="mx-auto w-full max-w-7xl">
         
+
+
         {/* Header Section */}
         <header className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white drop-shadow-[0_4px_20px_rgba(56,189,248,0.6)] mb-6">
@@ -97,7 +147,7 @@ const About = () => {
           </h1>
           <div className="w-28 h-1 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-400 mx-auto rounded-full shadow-[0_0_20px_rgba(14,165,233,0.5)] mb-8" />
           <p className="text-gray-200 text-lg sm:text-xl leading-relaxed max-w-4xl mx-auto px-2">
-            Soy <span className="text-white font-semibold">Raúl Rodríguez Clavero</span>, desarrollador Fullstack, analista programador, profesor de inglés y apasionado por la innovación y las tecnologías educativas.
+            Soy <span className="text-white font-semibold">Raúl Rodríguez Clavero</span>, desarrollador Fullstack, profesor de inglés y apasionado por innovación tecnológica en educación y distintas industrias.
           </p>
         </header>
 
@@ -112,7 +162,7 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {techStack.map((item, idx) => (
-              <div 
+              <article 
                 key={idx} 
                 className="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-sky-500/50 hover:bg-white/10 transition-all duration-300 shadow-xl flex flex-col items-center text-center"
               >
@@ -133,7 +183,7 @@ const About = () => {
                     </span>
                   ))}
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </section>
@@ -142,13 +192,13 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* Columna Izquierda: Perfil Profesional */}
-          <div className="lg:col-span-5 space-y-10">
+          <aside className="lg:col-span-5 space-y-10">
             <div className="relative group mx-auto lg:mx-0 w-full max-w-md">
               <div className="absolute -inset-1 bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/10">
                 <Image
                   src="/about.jpg" 
-                  alt="Raúl Rodríguez Clavero - Desarrollador Full-Stack y Profesor"
+                  alt="Raúl Rodríguez, desarrollador Full-Stack en Valparaíso"
                   fill
                   className="object-cover transform group-hover:scale-105 transition-transform duration-700"
                   priority
@@ -157,17 +207,17 @@ const About = () => {
             </div>
 
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-white flex items-center gap-3">
+              <h2 className="text-2xl font-bold text-white flex items-center gap-3">
                 <span className="w-8 h-8 rounded-lg bg-sky-500/20 flex items-center justify-center">
                   <Globe className="w-5 h-5 text-sky-400" />
                 </span>
                 Perfil Profesional
-              </h3>
+              </h2>
               <p className="text-gray-300 text-lg leading-relaxed">
                 Fundador de <strong className="text-sky-400">Raúl Rodríguez - Soluciones Informáticas</strong>. 
-                Mi enfoque une el desarrollo web fullstack moderno con la capacidad pedagógica 
-                de un docente experto, permitiéndome crear software que no solo es funcional, 
-                sino también innovador, intuitivo y centrado en el usuario.
+                Mi enfoque une el <Link href="/servicios" className="text-sky-400 hover:underline transition-colors">desarrollo web fullstack moderno</Link> con la capacidad pedagógica 
+                de un docente experto, permitiéndome crear <Link href="/portafolio" className="text-sky-400 hover:underline transition-colors">aplicaciones educativas y laborales con IA</Link> que no solo son funcionales, 
+                sino también innovadoras, intuitivas y accesibles a todo usuario que las necesite.
               </p>
               <div className="flex gap-4">
                 <Link 
@@ -178,16 +228,16 @@ const About = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </aside>
 
           {/* Columna Derecha: Trayectoria Experimental y Educativa */}
-          <div className="lg:col-span-7 space-y-10">
-             <h3 className="text-2xl font-bold text-white flex items-center gap-3">
+          <article className="lg:col-span-7 space-y-10">
+             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
                 <span className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center">
                   <Layers className="w-5 h-5 text-emerald-400" />
                 </span>
                 Experiencia y Formación
-              </h3>
+              </h2>
 
             <div className="relative border-l-2 border-sky-500/30 pl-8 ml-4 space-y-12">
               
@@ -195,9 +245,9 @@ const About = () => {
               <div className="relative group">
                 <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-slate-950 border-4 border-sky-500 group-hover:scale-125 transition-transform" />
                 <span className="text-sky-400 font-bold text-sm uppercase tracking-wider">2024 - Presente</span>
-                <h4 className="text-xl font-bold text-white mt-1">Fundador - Raúl Rodríguez Soluciones Informáticas</h4>
+                <h3 className="text-xl font-bold text-white mt-1">Fundador - Raúl Rodríguez Soluciones Informáticas</h3>
                 <p className="text-gray-400 mt-2">
-                  Liderando el desarrollo de software a medida, aplicaciones web e integración de soluciones basadas en IA para potenciar negocios y emprendimientos.
+                  Desarrollo de software a medida, aplicaciones web e integración de soluciones basadas en IA para potenciar experiencias de aprendizaje y retroalimentación, además de automatizar tareas en empresas y emprendimientos.
                 </p>
               </div>
 
@@ -205,9 +255,9 @@ const About = () => {
               <div className="relative group">
                 <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-slate-950 border-4 border-blue-500 group-hover:scale-125 transition-transform" />
                 <span className="text-blue-400 font-bold text-sm uppercase tracking-wider">2019 - 2024</span>
-                <h4 className="text-xl font-bold text-white mt-1">Fundador, Director & Docente - Instituto Online Radical English</h4>
+                <h3 className="text-xl font-bold text-white mt-1">Fundador, Director & Docente - Instituto Online Radical English</h3>
                 <p className="text-gray-400 mt-2">
-                  Gestión integral de plataforma educativa, liderazgo pedagógico y aplicación de tecnologías de aprendizaje acelerado para la enseñanza del inglés.
+                  Gestión integral de un instituto de inglés online, liderazgo pedagógico y aplicación de tecnologías de aprendizaje para la enseñanza significativa y efectiva del inglés.
                 </p>
               </div>
 
@@ -215,7 +265,7 @@ const About = () => {
               <div className="relative group">
                 <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-slate-950 border-4 border-indigo-500 group-hover:scale-125 transition-transform" />
                 <span className="text-indigo-400 font-bold text-sm uppercase tracking-wider">Formación Académica</span>
-                <h4 className="text-xl font-bold text-white mt-1">Hibridación Técnica y Pedagógica</h4>
+                <h3 className="text-xl font-bold text-white mt-1">Hibridación Técnica y Pedagógica</h3>
                 <div className="text-gray-400 mt-2 space-y-3">
                   <div className="p-3 rounded-lg bg-white/5 border border-white/5">
                     <p className="text-white font-medium">✓ Bootcamp de Desarrollo Fullstack Javascript (Desafío Latam, Chile, 2025)</p>
@@ -227,18 +277,18 @@ const About = () => {
                   </div>
                   <div className="p-3 rounded-lg bg-white/5 border border-white/5">
                     <p className="text-white font-medium">✓ Magíster en TESOL (Teaching English to Speakers of Other Languages) (UNAB, Chile, 2020)</p>
-                    <p className="text-xs text-sky-300 ml-3">Especialización en metodologías de enseñanza internacional.</p>
+                    <p className="text-xs text-sky-300 ml-3">Especialización en metodologías de enseñanza e investigación pedagógica, cimentando mi foco en EdTech.</p>
                   </div>
 
                   <div className="p-3 rounded-lg bg-white/5 border border-white/5">
                     <p className="text-white font-medium">✓ Licenciado en Educación y Profesor de Inglés (PUCV, Chile, 2016)</p>
-                    <p className="text-xs text-indigo-300 ml-3">Bases fundamentales para la creación de tecnologías educativas.</p>
+                    <p className="text-xs text-indigo-300 ml-3">Formación linguistica y pedagógica de alto nivel.</p>
                   </div>
                 </div>
               </div>
 
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </main>
