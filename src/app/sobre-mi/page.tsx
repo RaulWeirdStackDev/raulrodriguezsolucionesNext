@@ -120,7 +120,7 @@ const About = () => {
     {
       category: "Backend & Bases de Datos",
       icon: <Server className="w-6 h-6 text-emerald-400" />,
-      skills: ["Node.js", "Express", "PostgreSQL", "Prisma ORM", "WebSockets"]
+      skills: ["Node.js", "Express", "PostgreSQL", "SQLite", "Prisma ORM", "WebSockets"]
     },
     {
       category: "Especialidades",
