@@ -2,10 +2,10 @@
   {
     "img": "/MLJ.png",
     "title": "My Learning Journey - Diario de apendizaje del inglés (2026)",
-     "desc": "Aplicación de escritorio desarrollada con Electron que actua como un diario de aprendizaje del inglés. Permite a los usuarios registrar sus avances diarios y reflexiones, utilizando la API de Llama.cpp para generar sugerencias personalizadas y retroalimentación sobre su progreso en el aprendizaje del idioma.",
+     "desc": "Aplicación de escritorio desarrollada con Electron que actúa como un diario de aprendizaje del inglés. Permite a los usuarios registrar sus avances diarios y reflexiones, utilizando la API de Groq (modelo Llama 3.3) para permitirles obtener sugerencias personalizadas y retroalimentación sobre su propio progreso en el aprendizaje del idioma.",
     "link": "#",
     "category": ["fullstack", "educativo", "ia"],
-    "technologies": ["React", "Tailwind CSS", "Node.js", "Express", "Llama cpp", "Electron", "SQLite", "Prisma ORM"]
+    "technologies": ["React", "Tailwind CSS", "Node.js", "Express", "Groq API (IA)", "Electron", "SQLite", "Prisma ORM"]
   },
   {
     "img": "/rrsWeb.png",
