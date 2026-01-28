@@ -140,7 +140,7 @@ export default function PortfolioClient() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="relative h-52 w-full overflow-hidden">
-                  <div className="absolute top-3 left-3 z-10 bg-blue-600/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-lg flex items-center gap-2 shadow-lg">
+                  <div className="absolute bottom-3 right-3 z-10 bg-blue-600/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-lg flex items-center gap-2 shadow-lg">
                     <span aria-hidden="true">{mainCat.icon}</span>
                     <span className="uppercase tracking-wider">{mainCat.name}</span>
                   </div>
@@ -149,7 +149,7 @@ export default function PortfolioClient() {
                     alt={`Captura de pantalla del proyecto ${proyecto.title}`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-contain transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-80" />
                 </div>
