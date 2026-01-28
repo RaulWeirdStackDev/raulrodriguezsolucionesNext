@@ -92,7 +92,7 @@ export default function PortfolioClient() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white drop-shadow-[0_4px_20px_rgba(59,130,246,0.5)] mb-6">
             Mis Proyectos
           </h1>
-          <div className="w-28 h-1 bg-gradient-to-r from-blue-400 via-blue-600 to-blue-400 mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)] mb-8" />
+          <div className="w-28 h-1 bg-linear-to-r from-blue-400 via-blue-600 to-blue-400 mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)] mb-8" />
           <p className="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto px-2">
             Proyectos que reflejan mi pasión por la tecnología y la educación.
           </p>
@@ -151,14 +151,14 @@ export default function PortfolioClient() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-contain transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-linear-to-trom-gray-950 via-transparent to-transparent opacity-80" />
                 </div>
 
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-6 flex flex-col grow">
                   <h2 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                     {proyecto.title}
                   </h2>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6 grow">
                     {proyecto.desc}
                   </p>
 
@@ -212,7 +212,7 @@ export default function PortfolioClient() {
         )}
 
         {/* Call to Action */}
-        <section className="mt-24 p-8 md:p-12 rounded-3xl bg-gradient-to-br from-blue-900/20 to-transparent border border-white/10 text-center">
+        <section className="mt-24 p-8 md:p-12 rounded-3xl bg-linear-to-br from-blue-900/20 to-transparent border border-white/10 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">¿Tienes una idea en mente?</h2>
           <p className="text-gray-300 mb-8 max-w-xl mx-auto">
             Estoy disponible para nuevos proyectos y colaboraciones.
