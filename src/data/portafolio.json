@@ -1,5 +1,13 @@
 [
   {
+    "img": "/crossing.png",
+    "title": "Crossing THAT River - Juego de lógica (con un toque de humor!) (2026)",
+     "desc": "Crossing THAT River es un juego de lógica desarrollado con HTML5, CSS3 y JavaScript. El objetivo del juego es ayudar a un grupo de personajes a cruzar un río utilizando un bote, emulando el tradicional juego de lógica del granjero que cruza un río. Incluye  un toque de humor en su diseño y narrativa.",
+    "link": "https://crossing-that-river.vercel.app/",
+    "category": ["juegos"],
+    "technologies": ["HTML5", "CSS3", "JavaScript"]
+  },
+  {
     "img": "/MLJ.png",
     "title": "My Learning Journey - Diario de apendizaje del inglés (2026)",
      "desc": "Aplicación de escritorio desarrollada con Electron que actúa como un diario de aprendizaje del inglés. Permite a los usuarios registrar sus avances diarios y reflexiones, utilizando la API de Groq (modelo Llama 3.3) para permitirles obtener sugerencias personalizadas y retroalimentación sobre su propio progreso en el aprendizaje del idioma.",
@@ -115,7 +123,7 @@
     "img": "/R-Gaming.jpeg",
     "title": "R-Gaming, plataforma web fullstack para la difusión y venta de videojuegos (2025)",
     "desc": "R-Gaming es una aplicación web fullstack que permitirá a los usuarios comprar y probar videojuegos de mi creación, además de dar retroalimentación y contribuir al desarrollo de los mismos.",
-    "link": "#",
+    "link": "https://games-raul-front.vercel.app/",
     "category": ["fullstack", "juegos", "web"],
     "technologies": ["React", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"]
   },
