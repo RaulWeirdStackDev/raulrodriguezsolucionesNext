@@ -1,8 +1,8 @@
 [
   {
     "img": "/crossing.png",
-    "title": "Crossing THAT River - Juego de lógica (con un toque de humor!) (2026)",
-"desc": "Juego de lógica basado en el clásico acertijo del río. Ayuda a los personajes a cruzar usando un bote. Compite en rankings globales y juega desde el navegador o como PWA instalable. Desarrollado con JavaScript, Node.js y PostgreSQL, con un toque de humor y picardía.",
+    "title": "Crossing THAT River - Juego de lógica (2026)",
+"desc": "Juego de lógica basado en el clásico acertijo del río. Ayuda a los personajes a cruzar usando un bote. Compite en rankings globales y juega desde el navegador o como PWA instalable. Desarrollado con JavaScript, Node.js y PostgreSQL, con un toque de picardía.",
     "link": "https://crossing-that-river.vercel.app/",
     "category": ["juegos"],
     "technologies": ["HTML5", "CSS3", "JavaScript", "Node.js", "Express", "PostgreSQL", "PWA"]
@@ -10,7 +10,7 @@
   {
     "img": "/MLJ.png",
     "title": "My Learning Journey - Diario de apendizaje del inglés (2026)",
-     "desc": "Aplicación de escritorio desarrollada con Electron que actúa como un diario de aprendizaje del inglés. Permite a los usuarios registrar sus avances diarios y reflexiones, utilizando la API de Groq (modelo Llama 3.3) para permitirles obtener sugerencias personalizadas y retroalimentación sobre su propio progreso en el aprendizaje del idioma.",
+     "desc": "Diario de aprendizaje del inglés desarrollado como aplicación de escritorio con Electron. Permite a los usuarios registrar sus avances diarios y reflexiones, utilizando la API de Groq (modelo Llama 3.3) para permitirles obtener sugerencias personalizadas y retroalimentación sobre su propio proceso en el aprendizaje del idioma.",
     "link": "#",
     "category": ["fullstack", "educativo", "ia"],
     "technologies": ["React", "Tailwind CSS", "Node.js", "Express", "Groq API (IA)", "Electron", "SQLite", "Prisma ORM"]
