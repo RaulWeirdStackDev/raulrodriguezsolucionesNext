@@ -2,10 +2,10 @@
   {
     "img": "/crossing.png",
     "title": "Crossing THAT River - Juego de lógica (con un toque de humor!) (2026)",
-     "desc": "Crossing THAT River es un juego de lógica desarrollado con HTML5, CSS3 y JavaScript. El objetivo del juego es ayudar a un grupo de personajes a cruzar un río utilizando un bote, emulando el tradicional juego de lógica del granjero que cruza un río. Incluye  un toque de humor en su diseño y narrativa.",
+     "desc": "Crossing THAT River es un juego de lógica desarrollado con HTML5, CSS3 y JavaScript en el frontend y Node.js, Express y PostgreSQL en el backend, permitiendo al usuario registrar sus tiempos al completar el juego y competir en un ranking en línea con otros jugadores, además de poder jugar tanto en el navegador como instalando la aplicación en dispositivos móviles o de escritorio. El objetivo del juego es ayudar a un grupo de personajes a cruzar un río utilizando un bote, emulando el tradicional juego de lógica del granjero que cruza un río. Incluye  un toque de humor en su diseño y narrativa.",
     "link": "https://crossing-that-river.vercel.app/",
     "category": ["juegos"],
-    "technologies": ["HTML5", "CSS3", "JavaScript"]
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Node.js", "Express", "PostgreSQL", "PWA"]
   },
   {
     "img": "/MLJ.png",
