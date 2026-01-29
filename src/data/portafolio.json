@@ -2,7 +2,7 @@
   {
     "img": "/crossing.png",
     "title": "Crossing THAT River - Juego de lógica (con un toque de humor!) (2026)",
-"desc": "Juego de lógica web basado en el clásico acertijo del río. Ayuda a los personajes a cruzar usando un bote. Compite en rankings globales y juega desde el navegador o como PWA instalable. Desarrollado con JavaScript, Node.js y PostgreSQL, con un toque de humor y picardía.",
+"desc": "Juego de lógica basado en el clásico acertijo del río. Ayuda a los personajes a cruzar usando un bote. Compite en rankings globales y juega desde el navegador o como PWA instalable. Desarrollado con JavaScript, Node.js y PostgreSQL, con un toque de humor y picardía.",
     "link": "https://crossing-that-river.vercel.app/",
     "category": ["juegos"],
     "technologies": ["HTML5", "CSS3", "JavaScript", "Node.js", "Express", "PostgreSQL", "PWA"]
