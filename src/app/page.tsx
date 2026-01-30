@@ -91,7 +91,7 @@ export default function Home() {
       </div>
       <main id="contenido-principal" className="flex-1 flex flex-col items-center w-full bg-slate-950 text-white font-['Inter',sans-serif] leading-relaxed">
         {/* Hero Section */}
-        <section className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/40 via-blue-800/30 to-blue-700/40 backdrop-blur-sm border border-white/10 py-12 rounded-lg my-8 shadow-xl">
+        <section className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 bg-linear-to-br from-blue-900/40 via-blue-800/30 to-blue-700/40 backdrop-blur-sm border border-white/10 py-12 rounded-lg my-8 shadow-xl">
           <div className="flex flex-wrap items-center min-h-[75vh]">
             <div className="w-full lg:w-7/12 mb-8 lg:mb-0 text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white text-balance">
@@ -133,7 +133,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   priority
-                  className="w-4/5 max-w-[300px] mx-auto rounded-full border-4 border-blue-400/30 shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-transform duration-300 hover:scale-105 hover:border-blue-400/60"
+                  className="w-4/5 max-w-75 mx-auto rounded-full border-4 border-blue-400/30 shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-transform duration-300 hover:scale-105 hover:border-blue-400/60"
                 />
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function Home() {
                 text: "Te acompaño en todo el proceso, desde el concepto hasta tener tu sitio online.",
               },
             ].map((item, i) => (
-              <article key={i} className="h-full text-center bg-gradient-to-br from-blue-900/30 to-blue-800/20 backdrop-blur-sm border border-blue-400/20 rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(59,130,246,0.3)] hover:bg-blue-900/40 hover:border-blue-400/40 p-6">
+              <article key={i} className="h-full text-center bg-linear-to-br from-blue-900/30 to-blue-800/20 backdrop-blur-sm border border-blue-400/20 rounded-lg shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(59,130,246,0.3)] hover:bg-blue-900/40 hover:border-blue-400/40 p-6">
                 <div className="mb-3" aria-hidden="true">{item.icon}</div>
                 <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
                 <p className="text-blue-100/80 text-pretty">{item.text}</p>
@@ -203,7 +203,7 @@ export default function Home() {
         </section>
 
         {/* Mis Clientes */}
-        <section className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/40 via-blue-800/30 to-blue-700/40 backdrop-blur-sm border border-white/10 py-8 rounded-lg mb-8 shadow-xl" aria-labelledby="clients">
+        <section className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 bg-linear-to-br from-blue-900/40 via-blue-800/30 to-blue-700/40 backdrop-blur-sm border border-white/10 py-8 rounded-lg mb-8 shadow-xl" aria-labelledby="clients">
           <div className="w-full lg:w-8/12 mx-auto text-center mb-6">
             <h2 id="clients" className="text-3xl md:text-4xl font-semibold mb-2 text-white">Mis Clientes</h2>
             <p className="text-lg text-blue-100/90 mb-0 text-balance">
@@ -218,7 +218,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  flex flex-col items-center text-center p-6 h-full min-h-[180px] justify-center
+                  flex flex-col items-center text-center p-6 h-full min-h-45 justify-center
                   bg-blue-900/30 backdrop-blur-sm border border-blue-400/20 rounded-xl
                   transition-all duration-300
                   hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(59,130,246,0.3)]
@@ -233,6 +233,7 @@ export default function Home() {
                     alt="Logo de Sangom Taekwondo Center"
                     width={80}
                     height={80}
+                    loading="lazy"
                     className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
@@ -251,7 +252,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  flex flex-col items-center text-center p-6 h-full min-h-[180px] justify-center
+                  flex flex-col items-center text-center p-6 h-full min-h-45 justify-center
                   bg-blue-900/30 backdrop-blur-sm border border-blue-400/20 rounded-xl
                   transition-all duration-300
                   hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(59,130,246,0.3)]
@@ -266,6 +267,7 @@ export default function Home() {
                     alt="Logo de Ay Lana!"
                     width={80}
                     height={80}
+                    loading="lazy"
                     className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
@@ -284,7 +286,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  flex flex-col items-center text-center p-6 h-full min-h-[180px] justify-center
+                  flex flex-col items-center text-center p-6 h-full min-h-45 justify-center
                   bg-blue-900/30 backdrop-blur-sm border border-blue-400/20 rounded-xl
                   transition-all duration-300
                   hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(59,130,246,0.3)]
@@ -299,6 +301,7 @@ export default function Home() {
                     alt="Logo de Raksa Auditores"
                     width={80}
                     height={80}
+                    loading="lazy"
                     className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
@@ -314,7 +317,7 @@ export default function Home() {
         </section>
 
         {/* Final CTA */}
-        <section className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 via-blue-900 to-blue-800 text-white py-12 rounded-lg text-center mb-5 shadow-2xl" aria-labelledby="cta">
+        <section className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 bg-linear-to-br from-blue-600 via-blue-900 to-blue-800 text-white py-12 rounded-lg text-center mb-5 shadow-2xl" aria-labelledby="cta">
           <div className="w-full lg:w-8/12 mx-auto">
             <h2 id="cta" className="text-3xl md:text-4xl font-semibold mb-6 text-white text-balance">¿Llevemos tu idea al siguiente nivel?</h2>
             <p className="text-lg md:text-xl mb-6 text-blue-50 text-pretty">
